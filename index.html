@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KRISHNA Jewellery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">KRISHNA</div>
+    
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="menu-btn">☰</div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Timeless Luxury</h1>
+        <p>Crafted Jewellery for Elegant Souls</p>
+        <button onclick="document.getElementById('collection').scrollIntoView({ behavior: 'smooth' })">
+    Explore Collection
+</button>
+    </div>
+</section>
+
+<section class="metal-rates">
+    <div class="rates-container">
+        <h2>Today’s Metal Rates</h2>
+        <p class="subtitle">Updated as per today’s bullion market</p>
+
+        <div class="rate-cards">
+
+            <!-- Gold -->
+            <div class="rate-card gold">
+                <h3>Gold Rate</h3>
+                <p class="purity">24K · 1 Gram</p>
+                <div class="price">₹ <span class="gold-price">6120</span></div>
+            </div>
+
+            <!-- Silver -->
+            <div class="rate-card silver">
+                <h3>Silver Rate</h3>
+                <p class="purity">999 · 1 Gram</p>
+                <div class="price">₹ <span class="silver-price">78</span></div>
+            </div>
+
+        </div>
+
+        <p class="note">*Rates are subject to change without prior notice.</p>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="collection" id="collection">
+    <h2>Our Collection</h2>
+    <div class="cards">
+        <div class="card" onclick="showSection('rings-section')">
+            <img src="rings.jpg" />
+            <h3>Gold Rings</h3>
+            <p>Click to view</p>
+        </div>
+
+        <div class="card" onclick="showSection('necklaces-section')">
+            <img src="gold.jpg" />
+            <h3>Necklaces</h3>
+            <p>Click to view</p>
+        </div>
+
+        <div class="card" onclick="showSection('bracelets-section')">
+            <img src="bracelet.jpg" />
+            <h3>Bracelets</h3>
+            <p>Click to view</p>
+        </div>
+
+ <div class="card" onclick="showSection('chains-section')">
+            <img src="chains.jpg" />
+            <h3>Chains</h3>
+            <p>Click to view</p>
+        </div>
+    </div>
+
+
+
+    </div>
+</section>
+
+<div id="product-details-container">
+    
+    <section id="rings-section" class="hidden-section">
+     
+        <h2>Gold Rings Collection</h2>
+        <div class="product-grid">
+            <div class="item-card">
+                <img src="ring1.jpg" alt="GOLD RING ONE">
+            
+                <a href="#" class="whatsapp-btn">Get Details</a>
+
+            </div>
+
+            <div class="item-card">
+            <img src="ring2.jpg" alt="GOLD RING TWO">
+           
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in the Ring" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="ring3.jpg" alt="GOLD RING THREE">
+            
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in the Ring" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="ring4.jpg" alt="GOLD RING FOUR">
+            
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in the Ring" class="whatsapp-btn">Get Details</a>
+        </div>
+
+            </div>
+    </section>
+
+    <section id="necklaces-section" class="hidden-section">
+        
+        <h2>Necklaces Collection</h2>
+        <div class="product-grid">
+            <div class="item-card">
+                <img src="necklace1.jpg" alt="GOLD NECKLACE ONE">
+             
+                <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Necklace" class="whatsapp-btn">Get Details</a>
+            </div>
+
+            <div class="item-card">
+            <img src="necklace2.jpg" alt="GOLD NECKLACE TWO">
+          
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Necklace" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="necklace3.jpg" alt="GOLD NECKLACE THREE">
+          
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Necklace" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        
+
+        </div>
+    </section>
+
+    <section id="bracelets-section" class="hidden-section">
+   
+        <h2>Bracelets Collection</h2>
+        <div class="product-grid">
+            <div class="item-card">
+                <img src="bracelet1.jpg" alt="GOLD BRACELET ONE">
+
+                <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Bracelet" class="whatsapp-btn">Get Details</a>
+            </div>
+
+            <div class="item-card">
+            <img src="bracelet2.jpg" alt="GOLD BRACELET TWO">
+            
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Bracelet" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="bracelet3.jpg" alt="GOLD BRACELET THREE">
+            
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Bracelet" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="bracelet4.jpg" alt="GOLD BRACELET FOUR">
+          
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Bracelet" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        </div>
+    </section>
+
+ <section id="chains-section" class="hidden-section">
+   
+        <h2>Chains Collection</h2>
+        <div class="product-grid">
+            <div class="item-card">
+                <img src="chain1.jpg" alt="GOLD CHAIN ONE">
+
+                <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Chain" class="whatsapp-btn">Get Details</a>
+            </div>
+
+            <div class="item-card">
+            <img src="chain2.jpg" alt="GOLD CHAIN TWO">
+            
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Chain" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="chain3.jpg" alt="GOLD CHAIN THREE">
+            
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Chain" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="item-card">
+            <img src="chain4.jpg" alt="GOLD CHAIN FOUR">
+          
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Chain" class="whatsapp-btn">Get Details</a>
+        </div>
+
+         <div class="item-card">
+            <img src="chain5.jpg" alt="GOLD CHAIN FIVE">
+          
+            <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Chain" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        </div>
+    </section>
+
+</div>
+
+
+
+<section class="top-selling" id="top-selling">
+    <h2>Top Selling Products</h2>
+
+    <div class="top-selling-track">
+        <div class="top-card">
+            <img src="ring3.jpg" alt="Gold Ring">
+            <h4>Gold Ring</h4>
+               <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Ring" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="top-card">
+            <img src="necklace3.jpg" alt="Gold Necklace">
+            <h4>Necklace</h4>
+               <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Necklace" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="top-card">
+            <img src="bracelet3.jpg" alt="Gold Bracelet">
+            <h4>Bracelet</h4>
+               <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Bracelet" class="whatsapp-btn">Get Details</a>
+        </div>
+
+        <div class="top-card">
+            <img src="chain3.jpg" alt="Gold Earrings">
+            <h4>Chain</h4>
+               <a href="https://wa.me/+919961020230?text=Hi, I am interested in this Chain" class="whatsapp-btn">Get Details</a>
+        </div>
+
+       
+    </div>
+</section>
+
+
+
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        At KRISSHNA Jewellery, every piece is handcrafted with passion,
+        precision, and premium materials to define elegance.
+    </p>
+</section>
+
+
+
+<footer class="luxury-footer" id="contact">
+    <div class="footer-container">
+        <div class="footer-brand">
+               <h1 class="footer-logo">
+    <img src="logo.png" alt="Krishnas Jewellery">
+</h1>
+
+            <p class="tagline">Since 2014</p>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Near Canara Bank, Paravoor Junction,</p>
+                <p>NH 66, Punnapra, Alappuzha-688004, Kerala</p>
+                <p><strong>+91 7947435491</strong></p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#top-selling">Top Selling</a></li>
+                  
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li>Custom Jewellery Design</li>
+                    <li>Gold Exchange & Valuation</li>
+                    <li>Professional Cleaning</li>
+                    <li>Bridal Consultancy</li>
+                </ul>
+            </div>
+
+            <div class="footer-col inquiry-form">
+                <input type="text" id="wa-name" placeholder="Your name (optional)">
+                <textarea id="wa-msg" placeholder="Type your request..."></textarea>
+                <button onclick="sendWhatsApp()" class="wa-btn">Send via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 KRISHNAS Jewellery. All Rights Reserved.</p>
+       <p>
+  Designed by 
+  <a href="https://opulentnexus.co.in" target="_blank" class="designer">
+    Opulent Nexus
+  </a>
+</p>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+
+<script>
+document.querySelectorAll(".whatsapp-btn").forEach(button => {
+    button.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const card = this.closest(".item-card, .top-card");
+        const imgElement = card.querySelector("img");
+        const productName = imgElement.alt;
+        const imageURL = imgElement.src;
+
+        const phoneNumber = "919961020230";
+
+        const message = `Hi, I am interested in this product:
+
+Product: ${productName}
+Image: ${imageURL}
+
+Please share more details.`;
+
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.open(whatsappURL, "_blank");
+    });
+});
+</script>
+
+
+
+
+<script>
+function sendWhatsApp() {
+    const phoneNumber = "919961020230";  // Your WhatsApp number (no +)
+
+    const name = document.getElementById("wa-name").value.trim();
+    const message = document.getElementById("wa-msg").value.trim();
+
+    if (message === "") {
+        alert("Please enter your message.");
+        return;
+    }
+
+    let finalMessage = "Hello, I have an inquiry:\n\n";
+
+    if (name !== "") {
+        finalMessage += "Name: " + name + "\n";
+    }
+
+    finalMessage += "Message: " + message;
+
+    const whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(finalMessage);
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
+
+
+
+</body>
+</html>
