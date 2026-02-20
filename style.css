@@ -451,7 +451,7 @@ body {
 /* Desktop */
 @media (min-width: 1024px) {
     .cards {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 36px;
     }
 }
@@ -1053,4 +1053,5 @@ font-family: "Red Rose", serif;
         margin-left: 0;
     }
 }
+
 
